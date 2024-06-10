@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invitación de Cumpleaños</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="invitation">
-            <img src="images/sonic.png" alt="Sonic" class="sonic">
+        <div class="invitation animate__animated animate__bounceIn">
+            <img src="images/sonic.png" alt="Sonic" class="sonic animate__animated animate__pulse animate__infinite">
             <h1>¡Estás Invitado!</h1>
             <p>Ven a celebrar el cumpleaños de <strong>Lyam</strong></p>
             <p><strong>Fecha:</strong> 14/06/2024</p>
             <p><strong>Lugar:</strong> Pizarrelli de la Nuñez</p>
             <p><strong>Hora:</strong> 6:00 PM</p>
+        </div>
+        <div class="confirmation animate__animated animate__fadeInUp">
+            <h2>Confirma tu Asistencia</h2>
+            <form id="rsvp-form">
+                <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
+                <button type="submit">Confirmar</button>
+            </form>
         </div>
     </div>
     <script src="script.js"></script>
